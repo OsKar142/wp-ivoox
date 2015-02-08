@@ -92,6 +92,9 @@ class WPivoox {
         if (preg_match('/^http.+?_(.{2})_(.+?)_1\.html(\?.*?)*$/i', $content, $result)) {
             $ivoox_id = $result[2];
             switch ($type) {
+                case 'adaptable':
+                    $code = '<iframe id="audio_' . $ivoox_id . '" frameborder="0" allowfullscreen="" scrolling="no" height="200" style="border:1px solid #EEE; box-sizing:border-box; width:100%;" src="http://www.ivoox.com/player_ej_' . $ivoox_id . '_4_1.html?c1=ff6600"></iframe>';
+                    break;
                 case 'mini':
                     $code = '<iframe width="238" height="48" frameborder="0" allowfullscreen="" scrolling="no" src="http://www.ivoox.com/player_ek_' . $ivoox_id . '_1.html"></iframe>';
                     break;
