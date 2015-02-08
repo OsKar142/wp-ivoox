@@ -31,6 +31,7 @@
             <tr>\
                 <th><label for="wpivoox-type">Player type</label></th>\
                 <td><select name="type" id="wpivoox-type">\
+                    <option value="adaptable">Adaptable</option>\
                     <option value="normal">HTML5 player</option>\
                     <option value="mini">Mini HTML5 player</option>\
                     <option value="flash">Flash player</option>\
